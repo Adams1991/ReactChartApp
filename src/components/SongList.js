@@ -7,6 +7,8 @@ const SongList = function (props) {
     return (
       <Song
         image={song["im:image"][2].label}
+        preview={song.link[1].attributes}
+
       >
         {song.title.label}
       </Song>);
