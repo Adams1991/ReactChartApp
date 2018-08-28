@@ -6,7 +6,7 @@ const SongList = function (props) {
   const SongComponents = props.songs.map((song) => {
     return (
       <Song
-
+        image={song["im:image"][2].label}
       >
         {song.title.label}
       </Song>);
@@ -14,10 +14,9 @@ const SongList = function (props) {
 
 
   return (
-    <ul name="song_list">
-      This is the SongList
+    <ol name="song_list">
       {SongComponents}
-    </ul>
+    </ol>
   );
 
 
