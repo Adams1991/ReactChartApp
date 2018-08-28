@@ -26,7 +26,7 @@ class SongContainer extends React.Component {
     return (
       <div className="song-box">
         <h2>Top 20</h2>
-        {/* <SongList songs={this.state.songs}/> */}
+        <SongList songs={this.state.songs}/>
       </div>
     );
   }

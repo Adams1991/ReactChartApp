@@ -8,13 +8,13 @@ const SongList = function (props) {
       <Song
 
       >
-        {song.title}
+        {song.title.label}
       </Song>);
   });
 
 
   return (
-    <ul>
+    <ul name="song_list">
       This is the SongList
       {SongComponents}
     </ul>
